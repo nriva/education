@@ -29,6 +29,7 @@ public class MainMaps {
 		System.out.println("\r\nLinkedHashMap Test/2:");
 		iterate2((LinkedHashMap<String, Long>)population);
 		
+		// Questa istrizione non provoca un'eccezione:
 		population.put("Beijing", null);
 	}
 

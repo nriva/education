@@ -19,6 +19,8 @@ public class Hashtables {
 			System.out.println("The population of " + pair.getKey() + " is " + pair.getValue());
 		}
 		
+		// Questa istruzione provoca una java.lang.NullPointerException
+		// Diversamente dalle altre map
 		table.put("Beijing", null);
 
 	}
