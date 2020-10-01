@@ -30,7 +30,13 @@ public class MainMaps {
 		iterate2((LinkedHashMap<String, Long>)population);
 		
 		// Questa istrizione non provoca un'eccezione:
-		population.put("Beijing", null);
+		population.put("Venice", null);
+		
+		Long longObject = population.get("Paris");
+		System.out.println(longObject);			// Stampa null
+		
+		long longValue = population.get("Paris");	// Va in eccezione perchè non si può convertire un null ad un valore long
+		System.out.println(longValue);		
 	}
 
 	private static void iterate(Map<String, Long> population) {

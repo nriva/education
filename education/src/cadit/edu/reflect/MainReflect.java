@@ -12,7 +12,6 @@ public class MainReflect {
 	public static void main(String[] args) {
 
 		Object o = null;
-		//Class<Person> _class = Person.class;
 		Class<Person> _class = Person.class;
 		
 		System.out.print(Modifier.toString(_class.getModifiers()));
@@ -42,16 +41,12 @@ public class MainReflect {
 				try {
 					o = constructor.newInstance(new Object[] {"Nicola", "Riva", "Verona", 38});
 				} catch (InstantiationException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalAccessException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (IllegalArgumentException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				} catch (InvocationTargetException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}

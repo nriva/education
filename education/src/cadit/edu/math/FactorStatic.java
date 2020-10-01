@@ -2,6 +2,13 @@ package cadit.edu.math;
 
 public class FactorStatic {
 	
+	public static int calc(int n)
+	{
+		if(n==0 || n==1)
+			return 1;
+		return n*calc(n-1);
+	}	
+	
 	public static int calcWhile(int n)
 	{
 		int r = 1;
