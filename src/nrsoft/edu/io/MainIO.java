@@ -5,8 +5,6 @@ import java.util.*;
 import java.util.zip.CRC32;
 import java.util.zip.CheckedInputStream;
 
-import javax.security.auth.callback.TextInputCallback;
-
 import nrsoft.edu.collection.*;
 
 public class MainIO {
